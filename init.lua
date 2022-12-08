@@ -10,9 +10,9 @@ else
     print("VSCode not detected")
 end
 
-require('plugins')
-require('base')
-require('remap')
+require('mylo.plugins')
+require('mylo.base')
+require('mylo.remap')
 require('nvim_comment').setup()
 -- require('null-ls')
 
@@ -45,8 +45,8 @@ local is_mac = has "macunix"
 local is_win = has "win32"
 
 if is_mac then
-    require('macos')
+    require('mylo/macos')
 end
 if is_win then
-    require('windows')
+    require('mylo/windows')
 end

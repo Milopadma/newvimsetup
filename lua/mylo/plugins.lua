@@ -38,10 +38,6 @@ packer.startup(function(use)
         })
     end })
 
-    -- coc plugins
-    -- use({ "neoclide/coc.nvim", branch = "release" })
-
-    -- non-coc plugins
     -- nvim-jdtls
     use('mfussenegger/nvim-jdtls')
     use("jose-elias-alvarez/null-ls.nvim") -- null-ls for lsp
@@ -55,7 +51,7 @@ packer.startup(function(use)
     use 'hrsh7th/cmp-nvim-lsp' -- lsp source for nvim-cmp
     use 'hrsh7th/nvim-cmp' -- autocompletion
     -- use("williamboman/mason-lspconfig.nvim") -- LSP manager config
-    use("onsails/lspkind-nvim") -- vscode-like pictograms for neovim lsp completion items
+    use("onsails/lspkind-nvim") -- vscode-like pictograms for neovim lsp chttps://www.youtube.com/watch?v=HEGnfmFwA_oompletion items
 
     -- which key plugin
     use({
@@ -66,7 +62,7 @@ packer.startup(function(use)
     use({
         "abecodes/tabout.nvim",
         wants = { "nvim-treesitter" }, -- or require if not used so far
-        after = { "nvim-cmp", "copilot" }, -- if a completion plugin is using tabs load it before
+        after = { "nvim-cmp", "copilot.vim" }, -- if a completion plugin is using tabs load it before
     })
 
     -- harpoon

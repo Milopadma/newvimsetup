@@ -1,4 +1,4 @@
-local nnoremap = require("keymap").nnoremap
+local nnoremap = require("mylo.keymap").nnoremap
 
 -- For normal nav
 nnoremap("<leader>w", "<cmd>w<CR>")
