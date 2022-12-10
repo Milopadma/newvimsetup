@@ -25,17 +25,16 @@ nnoremap("<M-/>", "<cmd>CommentToggle<CR>")
 
 -- For LSPsaga
 local opts = { noremap = true, silent = true }
--- vim.keymap.set('n', '<C-j>', '<Cmd>Lspsaga show_cursor_diagnostics<CR>', opts)
--- vim.keymap.set('n', 'K', '<Cmd>Lspsaga hover_doc<CR>', opts)
--- vim.keymap.set('n', 'gd', '<Cmd>Lspsaga lsp_finder<CR>', opts)
--- vim.keymap.set('i', '<C-k>', '<Cmd>Lspsaga signature_help<CR>', opts)
--- vim.keymap.set('n', 'gp', '<Cmd>Lspsaga peek_definition<CR>', opts)
--- vim.keymap.set('n', 'gr', '<Cmd>Lspsaga rename<CR>', opts)
--- vim.keymap.set('n', '<leader>ca', "<cmd>Lspsaga code_action<CR>", opts)
--- vim.keymap.set('n', '<leader>tf', "<cmd>Lspsaga open_floaterm<CR>", opts)
--- vim.keymap.set('t', '<leader>tf', "<cmd>Lspsaga close_floaterm<CR>", opts)
--- vim.keymap.set('t', '<Esc>', "<cmd>Lspsaga close_floaterm<CR>", opts)
--- vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<C-j>', '<Cmd>Lspsaga show_cursor_diagnostics<CR>', opts)
+vim.keymap.set('n', 'K', '<Cmd>Lspsaga hover_doc<CR>', opts)
+vim.keymap.set('n', 'gd', '<Cmd>Lspsaga lsp_finder<CR>', opts)
+vim.keymap.set('i', '<C-k>', '<Cmd>Lspsaga signature_help<CR>', opts)
+vim.keymap.set('n', 'gp', '<Cmd>Lspsaga peek_definition<CR>', opts)
+vim.keymap.set('n', 'gr', '<Cmd>Lspsaga rename<CR>', opts)
+vim.keymap.set('n', '<leader>ca', "<cmd>Lspsaga code_action<CR>", opts)
+vim.keymap.set('n', '<leader>tf', "<cmd>Lspsaga open_floaterm<CR>", opts)
+vim.keymap.set('t', '<leader>tf', "<cmd>Lspsaga close_floaterm<CR>", opts)
+vim.keymap.set('t', '<Esc>', "<cmd>Lspsaga close_floaterm<CR>", opts)
 
 -- For opening a floating terminal and running the code
 vim.keymap.set('n', '<leader>tr', "<cmd>RunFile float toggle<CR>", opts)

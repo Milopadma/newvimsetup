@@ -44,13 +44,13 @@ packer.startup(function(use)
     use("muniftanjim/prettier.nvim") -- prettier plugin
     use("lukas-reineke/lsp-format.nvim") -- for formatting lsp
     use("neovim/nvim-lspconfig") -- language server protocol
-    -- use("williamboman/mason.nvim") -- LSP manager
+    use("williamboman/mason.nvim") -- LSP manager
     use 'l3mon4d3/luasnip' -- snippets
     use("glepnir/lspsaga.nvim") -- lsp uis
     use 'hrsh7th/cmp-buffer' -- buffer source
     use 'hrsh7th/cmp-nvim-lsp' -- lsp source for nvim-cmp
     use 'hrsh7th/nvim-cmp' -- autocompletion
-    -- use("williamboman/mason-lspconfig.nvim") -- LSP manager config
+    use("williamboman/mason-lspconfig.nvim") -- LSP manager config
     use("onsails/lspkind-nvim") -- vscode-like pictograms for neovim lsp chttps://www.youtube.com/watch?v=HEGnfmFwA_oompletion items
 
     -- which key plugin
